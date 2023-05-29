@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nheg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/user1-tenant/my-app/devfile-sample-nheg@sha256:57f04fb31ca9106dd20c949d2d79ae8bf167d10bd4e65916a08f6ca1df2b0b42
+        name: my-nodejs
+        resources: {}
+status: {}
